@@ -44,7 +44,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/users/student-signup",
+        "http://localhost:2000/api/users/student-signup",
         formdata,
         {
           headers: {

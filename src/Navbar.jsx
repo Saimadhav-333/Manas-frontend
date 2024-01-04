@@ -35,7 +35,7 @@ const Navbar = () => {
           setError('Access token not found'); // Handle missing token
           return;
         }
-        const response = await axios.get('http://localhost:3000/api/users/student-profile', {
+        const response = await axios.get('http://localhost:2000/api/users/student-profile', {
           headers: {
             'Authorization': `Bearer ${accessToken}`,
             'Content-Type': 'application/json',
